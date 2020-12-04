@@ -3,14 +3,14 @@ import {View, Text, StyleSheet} from 'react-native';
 
 const Activity2: () => React$Node = () => {
   return (
-    <View style={styles.parent}>
-      <Text style={[styles.child, {backgroundColor: 'powderblue'}]}>
+    <View style={[styles.parent, {flexDirection: 'column'}]}>
+      <Text style={[styles.child, {flex: 1, backgroundColor: 'powderblue'}]}>
         Child One
       </Text>
-      <Text style={[styles.child, {backgroundColor: 'skyblue'}]}>
+      <Text style={[styles.child, {flex: 1, backgroundColor: 'skyblue'}]}>
         Child Two
       </Text>
-      <Text style={[styles.child, {backgroundColor: 'steelblue'}]}>
+      <Text style={[styles.child, {flex: 1, backgroundColor: 'steelblue'}]}>
         Child Three
       </Text>
     </View>
@@ -22,6 +22,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#F5fcff',
     borderColor: '#0099AA',
     borderWidth: 5,
+    flex: 1,
   },
   child: {
     borderWidth: 2,

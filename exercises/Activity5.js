@@ -24,6 +24,10 @@ const styles = StyleSheet.create({
     backgroundColor: '#F5fcff',
     borderColor: '#0099AA',
     borderWidth: 5,
+    // justifyContent: 'flex-start',
+    // justifyContent: 'flex-end',
+    // justifyContent: 'space-around',
+    // justifyContent: 'space-between',
   },
   child: {
     borderWidth: 2,

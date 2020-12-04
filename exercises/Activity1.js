@@ -3,7 +3,7 @@ import {View, Text, StyleSheet} from 'react-native';
 
 const Activity1: () => React$Node = () => {
   return (
-    <View style={styles.parent}>
+    <View style={(styles.parent, {flexDirection: 'row'})}>
       <Text style={[styles.child, {backgroundColor: 'powderblue'}]}>
         Child One
       </Text>
@@ -22,6 +22,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#F5fcff',
     borderColor: '#0099AA',
     borderWidth: 5,
+    //flexDirection: 'row', (can be done here also)
   },
   child: {
     borderWidth: 2,

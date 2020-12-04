@@ -3,15 +3,16 @@ import {View, Text, StyleSheet} from 'react-native';
 
 const Activity3: () => React$Node = () => {
   return (
-    <View style={styles.parent}>
-      <Text style={[styles.child, {backgroundColor: 'powderblue'}]}>
+    <View style={[styles.parent, {flex: 1, flexDirection: 'column'}]}>
+      <Text
+        style={[styles.child, {maxWidth: 90, backgroundColor: 'powderblue'}]}>
         Child One
       </Text>
       <Text style={[styles.child, {backgroundColor: 'skyblue'}]}>
         Child Two
       </Text>
       <Text
-        style={[styles.child, {backgroundColor: 'steelblue'}]}>
+        style={[styles.child, {maxHeight: 120, backgroundColor: 'steelblue'}]}>
         Child Three
       </Text>
     </View>
